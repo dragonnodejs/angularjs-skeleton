@@ -1,0 +1,14 @@
+body {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .navbar {
+    margin-bottom: 0px;
+}
