@@ -1,4 +1,5 @@
 "use strict";
+/*global module:false */
 
 // Serves the homepage for the application
 

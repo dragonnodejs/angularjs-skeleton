@@ -1,4 +1,5 @@
 "use strict";
+/*global module:false */
 
 /*
  * Express initialization and app service
