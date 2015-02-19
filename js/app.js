@@ -6,8 +6,8 @@ var dependencies = [
     'ngRoute',
     'pascalprecht.translate',
 
-    require('./controllers/app.js'),
-    require('./controllers/homepage.js')
+    require('./controllers/homepage.js'),
+    require('./controllers/imprint.js')
 ];
 
 angular.module('app', dependencies)

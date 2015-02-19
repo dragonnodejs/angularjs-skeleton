@@ -1,5 +1,7 @@
 "use strict";
 
+// Load the libraries and modules
+
 var config = {
     libraries: {
         express: require('express')
@@ -13,7 +15,9 @@ var config = {
             config: {
                 route: '/js/config.js',
                 pkg: __dirname + '/package.json',
-                env: {}
+                env: {
+                    server: process.env.SERVER
+                }
             },
             homepage: {
                 path: '/app.html'

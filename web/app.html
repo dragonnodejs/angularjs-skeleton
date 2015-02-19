@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="app" ng-controller="AppCtrl as app">
+<html ng-app="app">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -50,8 +50,9 @@
                     <a href="mailto:developer@dragonprojects.de">developer@dragonprojects.de</a>
                 </address>
             </div>
-            <div class="modal-footer">
-                <a ng-href="{{ app.config.pkg.homepage }}">{{ app.config.pkg.name }}</a> v{{ app.config.pkg.version }},
+            <div class="modal-footer" ng-controller="ImprintCtrl as imprint">
+                <a ng-href="{{ imprint.config.pkg.homepage }}">{{ imprint.config.pkg.name }}</a> v{{ imprint.config.pkg.version }},
+                <a ng-if="imprint.server" ng-href="{{ imprint.server.pkg.homepage }}">{{ imprint.server.pkg.name }}</a> v{{ imprint.server.pkg.version }},
                 <a href="http://dragonprojects.de">DragonProjects</a>
             </div>
         </div>
