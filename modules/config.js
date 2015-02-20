@@ -7,7 +7,9 @@
     config: {
         route: '/js/config.js',
         pkg: __dirname + '/package.json',
-        env: {}
+        env: {
+            server: process.env.SERVER
+        }
     }
  */
 

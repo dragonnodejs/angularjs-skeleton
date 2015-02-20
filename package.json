@@ -11,10 +11,9 @@
     },
     "dependencies": {
         "dragonnodejs": "^4.0.2",
-        "express": "^4.11.0",
+        "dragonnodejs-express": "^1.0.1",
         "bower": "^1.3.12",
-        "browserify": "^8.1.3",
-        "compression": "^1.4.1"
+        "browserify": "^8.1.3"
     },
     "devDependencies": {
         "watchify": "^2.3.0"

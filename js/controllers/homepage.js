@@ -9,8 +9,8 @@ var dependencies = [];
 angular.module(module.exports, dependencies)
     .config(['$routeProvider',
         function ($routeProvider) {
-            $routeProvider.
-                when('/', {
+            $routeProvider
+                .when('/', {
                     templateUrl: 'views/homepage.html'
                 });
         }
