@@ -5,6 +5,7 @@
 
 var config = {
     libraries: {
+        compression: require('compression'),
         express: require('express')
     },
     directory: __dirname + '/modules/',

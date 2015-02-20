@@ -11,10 +11,12 @@
  */
 
 module.exports = function (config, libraries, services) {
-    var express = libraries.express;
+    var compression = libraries.compression,
+        express = libraries.express;
 
     var app = express();
     app.listen(config.port);
+    app.use(compression());
     app.use(express.static(config.directory));
 
     services.app = app;
