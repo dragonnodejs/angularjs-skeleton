@@ -1,6 +1,6 @@
 # Development
 * Install [Node.js](http://nodejs.org/)
-* Git clone the repository [angularjs-skeleton](https://github.com/dragonnodejs/angularjs-skeleton.git)
+* Git clone the repository [dragonnodejs/angularjs-skeleton](https://github.com/dragonnodejs/angularjs-skeleton.git)
 * Open terminal, switch to the directory and execute:
   * npm install
   * PORT=%PORT% npm start
