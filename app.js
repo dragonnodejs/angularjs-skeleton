@@ -11,7 +11,8 @@ var config = {
     modules: {
         directory: {
             app: {
-                port: process.env.PORT
+                port: process.env.PORT,
+                directory: __dirname + '/web/'
             },
             config: {
                 route: '/js/config.js',
@@ -19,9 +20,6 @@ var config = {
                 env: {
                     server: process.env.SERVER
                 }
-            },
-            static: {
-                directory: __dirname + '/web/'
             }
         }
     }
