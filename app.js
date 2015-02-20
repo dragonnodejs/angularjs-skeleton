@@ -20,9 +20,6 @@ var config = {
                     server: process.env.SERVER
                 }
             },
-            homepage: {
-                path: '/app.html'
-            },
             static: {
                 directory: __dirname + '/web/'
             }
