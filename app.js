@@ -34,10 +34,15 @@ var config = {
         directory: {
             config: {
                 route: '/js/config.js',
-                pkg: __dirname + '/package.json',
-                env: {
-                    server: process.env.SERVER
-                }
+                config: function () {
+                    var pkg = require(__dirname + '/package.json');
+                    return {
+                        name: pkg.name,
+                        version: pkg.version,
+                        homepage: pkg.homepage,
+                        server: process.env.SERVER
+                    };
+                }()
             }
         }
     }

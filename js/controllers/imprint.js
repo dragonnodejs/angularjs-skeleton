@@ -9,8 +9,8 @@ var dependencies = [];
 angular.module(module.exports, dependencies)
     .controller('ImprintCtrl', function ($scope, $http) {
         $scope.config = config;
-        if (config.env.server) {
-            $http.get(config.env.server + '/')
+        if (config.server) {
+            $http.get(config.server + '/')
                 .success(function (data) {
                     $scope.server = data;
                 });
