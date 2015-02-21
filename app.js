@@ -12,13 +12,10 @@ var config = {
                     port: process.env.PORT
                 },
                 auth: {
-                    disabled: process.env.AUTH_DISABLED || !(process.env.AUTH_USER && process.env.AUTH_PASSWORD),
+                    disabled: process.env.AUTH_DISABLED,
                     realm: process.env.AUTH_REALM,
-                    users: function () {
-                        var users = {};
-                        users[process.env.AUTH_USER] = process.env.AUTH_PASSWORD;
-                        return users;
-                    }()
+                    user: process.env.AUTH_USER,
+                    password: process.env.AUTH_PASSWORD
                 },
                 header: {
                     'X-UA-Compatible': 'IE=edge,chrome=1',
