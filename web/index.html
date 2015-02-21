@@ -50,9 +50,9 @@
                     <a href="mailto:developer@dragonprojects.de">developer@dragonprojects.de</a>
                 </address>
             </div>
-            <div class="modal-footer" ng-controller="ImprintCtrl as imprint">
-                <a ng-href="{{ imprint.config.pkg.homepage }}">{{ imprint.config.pkg.name }}</a> v{{ imprint.config.pkg.version }},
-                <a ng-if="imprint.server" ng-href="{{ imprint.server.pkg.homepage }}">{{ imprint.server.pkg.name }}</a> v{{ imprint.server.pkg.version }},
+            <div class="modal-footer" ng-controller="ImprintCtrl">
+                <a ng-href="{{ config.pkg.homepage }}">{{ config.pkg.name }}</a> v{{ config.pkg.version }},
+                <a ng-if="server" ng-href="{{ server.pkg.homepage }}">{{ server.pkg.name }}</a> v{{ server.pkg.version }},
                 <a href="http://dragonprojects.de">DragonProjects</a>
             </div>
         </div>
