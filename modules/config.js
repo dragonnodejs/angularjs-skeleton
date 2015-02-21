@@ -6,7 +6,15 @@
  * @example
     config: {
         route: '/js/config.js',
-        config: {}
+        config: function () {
+            var pkg = require(__dirname + '/package.json');
+            return {
+                name: pkg.name,
+                version: pkg.version,
+                homepage: pkg.homepage,
+                server: process.env.SERVER
+            };
+        }()
     }
  */
 
