@@ -51,8 +51,8 @@
                 </address>
             </div>
             <div class="modal-footer" ng-controller="ImprintCtrl">
-                <a ng-href="{{ config.homepage }}">{{ config.name }}</a> v{{ config.version }},
-                <a ng-if="server" ng-href="{{ server.homepage }}">{{ server.name }}</a> v{{ server.version }},
+                <a ng-href="{{ config.homepage }}">{{ config.name }}</a> {{ config.version }},
+                <span ng-if="server"><a ng-href="{{ server.homepage }}">{{ server.name }}</a> {{ server.version }},</span>
                 <a href="http://dragonprojects.de">DragonProjects</a>
             </div>
         </div>
