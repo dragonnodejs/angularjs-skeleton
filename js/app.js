@@ -7,6 +7,8 @@ var dependencies = [
     'pascalprecht.translate',
 
     require('./controllers/homepage.js'),
+
+    require('./controllers/navigation.js'),
     require('./controllers/imprint.js')
 ];
 

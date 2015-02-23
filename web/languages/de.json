@@ -1,5 +1,5 @@
 {
     "title": "AngularJS Skeleton",
-    "navigation.homepage": "Startseite",
-    "navigation.imprint": "Impressum"
+    "homepage": "Startseite",
+    "imprint": "Impressum"
 }

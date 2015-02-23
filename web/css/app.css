@@ -12,3 +12,7 @@ footer {
 footer .navbar {
     margin-bottom: 0px;
 }
+
+.nav, .pagination, .carousel, .panel-title a {
+    cursor: pointer;
+}
