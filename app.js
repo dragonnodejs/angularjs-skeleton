@@ -1,5 +1,4 @@
 "use strict";
-/*global __dirname:false */
 
 // Load the libraries and modules
 
