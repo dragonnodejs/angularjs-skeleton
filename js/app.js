@@ -5,6 +5,7 @@
 var dependencies = [
     'ngRoute',
     'pascalprecht.translate',
+    'ui.bootstrap.showErrors',
 
     require('./controllers/homepage.js'),
 
