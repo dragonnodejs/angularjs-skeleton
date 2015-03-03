@@ -1,5 +1,4 @@
 "use strict";
-/*global module:false */
 
 // Serves the imprint for the application
 
