@@ -12,9 +12,10 @@ var config = {
                 },
                 auth: {
                     disabled: process.env.AUTH_DISABLED,
-                    realm: process.env.AUTH_REALM,
+                    users: process.env.AUTH_USERS,
                     user: process.env.AUTH_USER,
-                    password: process.env.AUTH_PASSWORD
+                    password: process.env.AUTH_PASSWORD,
+                    realm: process.env.AUTH_REALM
                 },
                 header: {
                     'X-UA-Compatible': 'IE=edge,chrome=1',
