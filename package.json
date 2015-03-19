@@ -4,7 +4,7 @@
     "homepage": "http://github.com/dragonnodejs/angularjs-skeleton",
     "scripts": {
         "start": "node app.js",
-        "postinstall": "npm run-script bower && npm run-script js",
+        "postinstall": "npm run bower && npm run js",
         "bower": "./node_modules/bower/bin/bower install",
         "js": "./node_modules/browserify/bin/cmd.js ./js/app.js -o ./web/js/app.js",
         "watchify": "./node_modules/watchify/bin/cmd.js ./js/app.js -o ./web/js/app.js"
