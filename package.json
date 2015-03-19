@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "homepage": "http://github.com/dragonnodejs/angularjs-skeleton",
     "scripts": {
-        "start": "node app.js",
+        "start": "node cluster.js",
         "postinstall": "npm run bower && npm run js",
         "bower": "./node_modules/bower/bin/bower install",
         "js": "./node_modules/browserify/bin/cmd.js ./js/app.js -o ./web/js/app.js",
@@ -13,7 +13,8 @@
         "dragonnodejs": "^4.0.4",
         "dragonnodejs-express": "^2.1.1",
         "bower": "^1.3.12",
-        "browserify": "^8.1.3"
+        "browserify": "^8.1.3",
+        "throng": "^1.0.0"
     },
     "devDependencies": {
         "watchify": "^2.3.0"
