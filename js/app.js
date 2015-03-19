@@ -9,8 +9,8 @@ var dependencies = [
 
     require('./controllers/homepage.js'),
 
-    require('./controllers/navigation.js'),
-    require('./controllers/imprint.js')
+    require('./controllers/imprint.js'),
+    require('./controllers/navigation.js')
 ];
 
 angular.module('app', dependencies)
