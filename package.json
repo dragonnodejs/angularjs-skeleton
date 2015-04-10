@@ -8,7 +8,8 @@
         "bower": "./node_modules/bower/bin/bower install",
         "js": "./node_modules/browserify/bin/cmd.js ./js/app.js -o ./web/js/app.js",
         "nodemon": "./node_modules/nodemon/bin/nodemon.js --watch app.js --watch modules app.js",
-        "watchify": "./node_modules/watchify/bin/cmd.js ./js/app.js -o ./web/js/app.js"
+        "watchify": "./node_modules/watchify/bin/cmd.js ./js/app.js -o ./web/js/app.js",
+        "test": "mocha -R spec"
     },
     "dependencies": {
         "dragonnodejs": "^4.0.4",
@@ -19,6 +20,7 @@
         "throng": "^1.0.0"
     },
     "devDependencies": {
+        "mocha": "^2.1.0",
         "nodemon": "^1.3.7",
         "watchify": "^2.3.0"
     },
