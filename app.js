@@ -32,20 +32,23 @@ var config = {
                 static: {
                     directory: __dirname + '/web/'
                 }
+            }],
+            [require('dragonnodejs-webserver'), {
+                bower: {
+                    libraries: ['bootstrap', 'jquery', 'angular'],
+                    path: __dirname + '/'
+                },
+                package: {
+                    path: __dirname + '/package.json'
+                },
+                swig: {
+                    views: __dirname + '/views/'
+                }
             }]
         ],
         directory: {
-            config: {
-                route: '/js/config.js',
-                config: function () {
-                    var pkg = require(__dirname + '/package.json');
-                    return {
-                        name: pkg.name,
-                        version: pkg.version,
-                        homepage: pkg.homepage,
-                        server: process.env.SERVER
-                    };
-                }()
+            homepage: {
+                server: process.env.SERVER
             }
         }
     }

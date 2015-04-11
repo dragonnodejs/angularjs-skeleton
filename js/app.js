@@ -9,7 +9,6 @@ var dependencies = [
 
     require('./controllers/homepage.js'),
 
-    require('./controllers/imprint.js'),
     require('./controllers/navigation.js')
 ];
 
