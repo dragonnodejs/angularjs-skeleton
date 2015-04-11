@@ -3,15 +3,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title translate="title"></title>
+
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/{{ bower.bootstrap }}/css/bootstrap.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/{{ bower.bootstrap }}/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="/css/angular-bootstrap.css" rel="stylesheet">
     <link href="/css/angular-bootstrap-show-errors.css" rel="stylesheet">
     <link href="/css/sticky-footer.css" rel="stylesheet">
+
     <link href="/css/app.css" rel="stylesheet">
 </head>
 <body>
+
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -29,9 +33,11 @@
         </div>
     </div>
 </nav>
+
 <div class="container">
     <div ng-view></div>
 </div>
+
 <footer>
     <nav class="navbar navbar-default">
         <div class="container">
@@ -41,6 +47,7 @@
         </div>
     </nav>
 </footer>
+
 <div class="modal fade" id="imprintModal" tabindex="-1" role="dialog" aria-labelledby="imprintLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -61,6 +68,7 @@
         </div>
     </div>
 </div>
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/{{ bower.jquery }}/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/{{ bower.bootstrap }}/js/bootstrap.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/{{ bower.angular }}/angular.min.js"></script>
@@ -68,6 +76,7 @@
 <script src="/js/vendor/angular-route/angular-route.min.js"></script>
 <script src="/js/vendor/angular-translate/angular-translate.min.js"></script>
 <script src="/js/vendor/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+
 <script>
     var server = '{{ server }}';
 </script>
