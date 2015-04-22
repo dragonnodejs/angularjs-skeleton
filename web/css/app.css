@@ -1,0 +1,28 @@
+/* Let <a> elements have a pointer independ of having href attribute or not */
+.nav, .pagination, .carousel, .panel-title a {
+    cursor: pointer;
+}
+
+/* Don't show error messages before the validation is done */
+.form-group .help-block {
+    display: none;
+}
+.form-group.has-error .help-block {
+    display: block;
+}
+
+/* Let the header and the footer enough place */
+body {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Make the footer sticky at the bottom of the page */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer .navbar {
+    margin-bottom: 0px;
+}
