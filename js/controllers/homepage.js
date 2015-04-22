@@ -6,11 +6,9 @@ module.exports = 'controllers/homepage';
 var dependencies = [];
 
 angular.module(module.exports, dependencies)
-    .config(['$routeProvider',
-        function ($routeProvider) {
-            $routeProvider
-                .when('/', {
-                    templateUrl: 'views/homepage.html'
-                });
-        }
-    ]);
+    .config(['$routeProvider', function ($routeProvider) {
+        $routeProvider
+            .when('/', {
+                templateUrl: 'views/homepage.html'
+            });
+    }]);

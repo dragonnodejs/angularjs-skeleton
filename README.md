@@ -11,7 +11,7 @@
 - Git commit/push into the master after changes
 
 ## Production
-- Set environment variable "NODE_ENV" to "production" to enable cache for swig templates and language data  
+- Set environment variable "NODE_ENV" to "production" to enable cache for swig templates
 
 ## Try it online
 http://angularjs-skeleton.herokuapp.com

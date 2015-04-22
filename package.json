@@ -3,12 +3,13 @@
     "version": "1.0.0",
     "homepage": "http://github.com/dragonnodejs/angularjs-skeleton",
     "scripts": {
-        "start": "node cluster.js",
-        "postinstall": "npm run bower && npm run js",
+        "postinstall": "npm run bower && npm run css && npm run js",
         "bower": "./node_modules/bower/bin/bower install",
-        "js": "./node_modules/browserify/bin/cmd.js ./js/app.js -o ./web/js/app.js",
-        "start-watch": "./node_modules/nodemon/bin/nodemon.js --watch app.js --watch modules app.js",
+        "css": "./node_modules/minifier/index.js ./web/css/app.css",
+        "js": "./node_modules/browserify/bin/cmd.js ./js/app.js -o ./web/js/app.js && ./node_modules/minifier/index.js ./web/js/app.js",
         "js-watch": "./node_modules/watchify/bin/cmd.js ./js/app.js -o ./web/js/app.js",
+        "start": "node cluster.js",
+        "start-watch": "./node_modules/nodemon/bin/nodemon.js --watch app.js --watch modules app.js"
         "test": "mocha -R spec"
     },
     "dependencies": {
@@ -17,6 +18,7 @@
         "dragonnodejs-webserver": "^9.0.0",
         "bower": "^1.3.12",
         "browserify": "^8.1.3",
+        "minifier": "^0.6.2",
         "newrelic": "^1.15.1",
         "throng": "^1.0.0"
     },

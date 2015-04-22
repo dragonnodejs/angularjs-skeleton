@@ -1,4 +1,0 @@
-/* Let <a> elements have a pointer independ of having href attribute or not */
-.nav, .pagination, .carousel, .panel-title a {
-    cursor: pointer;
-}

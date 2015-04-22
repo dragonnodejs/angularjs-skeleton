@@ -6,8 +6,8 @@ module.exports = 'controllers/navigation';
 var dependencies = [];
 
 angular.module(module.exports, dependencies)
-    .controller('NavigationCtrl', function ($scope, $location) {
+    .controller('NavigationCtrl', ['$scope', '$location', function ($scope, $location) {
         $scope.isActive = function (path) {
             return path === $location.path();
         };
-    });
+    }]);
