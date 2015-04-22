@@ -1,7 +1,15 @@
+/*
+ * AngularJS Bootstrap
+ */
+
 /* Let <a> elements have a pointer independ of having href attribute or not */
 .nav, .pagination, .carousel, .panel-title a {
     cursor: pointer;
 }
+
+/*
+ * AngularJS Bootstrap Show Errors
+ */
 
 /* Don't show error messages before the validation is done */
 .form-group .help-block {
@@ -10,6 +18,10 @@
 .form-group.has-error .help-block {
     display: block;
 }
+
+/*
+ * Sticky Footer
+ */
 
 /* Let the header and the footer enough place */
 body {
