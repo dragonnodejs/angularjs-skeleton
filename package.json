@@ -1,7 +1,11 @@
 {
     "name": "angularjs-skeleton",
+    "description": "Skeleton for an AngularJS client application",
     "version": "1.0.0",
     "homepage": "http://github.com/dragonnodejs/angularjs-skeleton",
+    "license": "MIT",
+    "author": "Christoph Herrmann <developer@dragonprojects.de>",
+    "readmeFilename": "README.md",
     "scripts": {
         "postinstall": "npm run bower && npm run css && npm run js",
         "bower": "./node_modules/bower/bin/bower install",
