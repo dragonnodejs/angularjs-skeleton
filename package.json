@@ -7,14 +7,14 @@
     "readmeFilename": "README.md",
     "main": "app.js",
     "scripts": {
-      "postinstall": "npm run bower && npm run css && npm run js",
-      "bower": "bower install",
-      "css": "minify ./web/css/app.css",
-      "js": "browserify ./js/app.js -o ./web/js/app.js && minify ./web/js/app.js",
-      "js-watch": "watchify ./js/app.js -o ./web/js/app.js",
-      "start": "node cluster.js",
-      "start-watch": "nodemon --watch modules app.js",
-      "test": "mocha -R spec"
+        "postinstall": "npm run bower && npm run css && npm run js",
+        "bower": "bower install",
+        "css": "minify ./web/css/app.css",
+        "js": "browserify ./js/app.js -o ./web/js/app.js && minify ./web/js/app.js",
+        "js-watch": "watchify ./js/app.js -o ./web/js/app.js",
+        "start": "node cluster.js",
+        "start-watch": "nodemon --watch modules app.js",
+        "test": "mocha -R spec"
     },
     "dependencies": {
         "dragonnodejs": "^4.0.4",
