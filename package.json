@@ -5,15 +5,16 @@
     "homepage": "http://github.com/dragonnodejs/angularjs-skeleton",
     "license": "MIT",
     "readmeFilename": "README.md",
+    "main": "app.js",
     "scripts": {
-        "postinstall": "npm run bower && npm run css && npm run js",
-        "bower": "./node_modules/bower/bin/bower install",
-        "css": "./node_modules/minifier/index.js ./web/css/app.css",
-        "js": "./node_modules/browserify/bin/cmd.js ./js/app.js -o ./web/js/app.js && ./node_modules/minifier/index.js ./web/js/app.js",
-        "js-watch": "./node_modules/watchify/bin/cmd.js ./js/app.js -o ./web/js/app.js",
-        "start": "node cluster.js",
-        "start-watch": "./node_modules/nodemon/bin/nodemon.js --watch app.js --watch modules app.js",
-        "test": "mocha -R spec"
+      "postinstall": "npm run bower && npm run css && npm run js",
+      "bower": "bower install",
+      "css": "minify ./web/css/app.css",
+      "js": "browserify ./js/app.js -o ./web/js/app.js && minify ./web/js/app.js",
+      "js-watch": "watchify ./js/app.js -o ./web/js/app.js",
+      "start": "node cluster.js",
+      "start-watch": "nodemon --watch modules app.js",
+      "test": "mocha -R spec"
     },
     "dependencies": {
         "dragonnodejs": "^4.0.4",
